@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+}
+*:focus{
+    outline: 0;
+}
+body{
+    background-color: rgb(54, 43, 75);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.data-box{
+    margin: 20px;
+    text-align: right;
+}
+.label{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.input{
+    padding: 8px 15px;
+    border-radius: 5px;
+    &:focus{
+        box-shadow: 0px 0px 10px rgb(136, 135, 135);
+    }
+}
+.container{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 200px;
+}
+.reg__title {
+    font-weight: bold;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+.reg__data {
+    position: relative;
+    text-align: center;
+}
+.login-label{
+    margin-right: 40px;
+}
+.logined {
+    text-decoration: none;
+    position: relative;
+    color: rgb(132, 180, 189);
+    &:after{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 0;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        height: 2px;
+        background-color: rgb(132, 180, 189);
+    }
+    &:hover:after{
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+        width: 100%;
+    }
+}
+.logined-p{
+    color: rgb(185, 185, 185);
+    padding: 10px 0;
+    transition: .2s;
+    &:hover{
+        color:#fff
+    }
+}
+.reg-submit {
+    padding: 8px 40px;
+    border-radius: 15px;
+    transition: .3s;
+    margin: 5px 0 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(56, 73, 124);
+    font-size: 12px;
+    letter-spacing: 1px;
+    &:hover{
+        box-shadow: 0px 0px 20px rgb(136, 135, 135);
+        cursor: pointer;
+    }
+}
