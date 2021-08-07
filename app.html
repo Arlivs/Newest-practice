@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app-css/app.css" >
+    <title>App</title>
+</head>
+<body class="day-theme">
+    <div class="wrapper">
+        <div class="login">
+            <a href="./Login.html" class="login-btn"><span class="log">Login</span></a>
+        </div>
+        <button class="popup-btn">Popup</button>
+        <div class="popup-body">
+            <div class="popup">
+                <div class="popup-content">
+                    <p class="popup-head">Hello, its my Popup</p>
+                    <p class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptas suscipit, tempora facilis doloremque aspernatur odit quisquam ea, 
+                        omnis excepturi voluptatem natus, porro corporis optio voluptatibus quis 
+                        necessitatibus a culpa mollitia.
+                    </p>
+                    <button class="popup-cancel">x</button>
+                </div>
+            </div>
+        </div>
+        <div class="timer">
+            <p class="timer-header"></p>
+            <div class="timer-content">
+                <span class="timer-hours">00</span> :
+                <span class="timer-minuts">00</span> :
+                <span class="timer-seconds">00</span>
+            </div>
+            <form class="timer-select">
+                <input type="number" name="timer" id="timer-hours" min="0" placeholder="hours">
+                <input type="number" name="timer" id="timer-mins" max="59" min="0" placeholder="minuts">
+                <input type="number" name="timer" id="timer-secs" max="59" min="0" placeholder="seconds">
+            </form>
+        </div>
+        <div class="mods">
+            <button class="mods-btn">Choose mode</button>
+            <div class="mods-vars">
+                <button class="mods-second">Timer</button>
+                <button class="mods-first">Increm Dicrem</button>
+            </div>
+        </div>
+        <div class="type-change">
+            <button class="type-changer">Change Type Of Data</button>
+        </div>
+        <div class="layout">
+            <button class="lay layout-day">Day</button>
+            <button class="lay layout-night">Night</button>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./app_comps/popup.js"></script>
+<script src="./app_comps/iters.js"></script>
+<script src="./app_comps/app.js"></script>
+<script src="./app_comps/timer.js"></script>
+<script src="./app_comps/serv.js"></script>
+</body>
+</html>
