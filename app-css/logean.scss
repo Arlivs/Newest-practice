@@ -5,6 +5,8 @@
     font-family: "Montserrat", sans-serif;
     border: 0;
 }
+$orng: rgb(214, 136, 34);
+$preWhite: rgb(235, 235, 235);
 *:focus{
     outline: 0;
 }
@@ -35,19 +37,37 @@ body{
     text-align: center;
     margin-top: 200px;
 }
-.reg__title {
-    font-weight: bold;
-    margin-bottom: 100px;
-    font-size: 50px;
-}
-.reg__data {
-    position: relative;
-    text-align: center;
+.reg{
+    &__title {
+        font-weight: bold;
+        margin-bottom: 100px;
+        font-size: 50px;
+    }
+    &__data {
+        position: relative;
+        text-align: center;
+    }
+    &-submit {
+        padding: 8px 40px;
+        border-radius: 15px;
+        transition: .3s;
+        margin: 5px 0 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(56, 73, 124);
+        font-size: 12px;
+        letter-spacing: 1px;
+        &:hover{
+            box-shadow: 0px 0px 20px rgb(136, 135, 135);
+            cursor: pointer;
+        }
+    }
+    
 }
 .login-label{
     margin-right: 40px;
 }
-.logined {
+.logined{
     text-decoration: none;
     position: relative;
     color: rgb(132, 180, 189);
@@ -69,27 +89,17 @@ body{
         bottom: 0;
         width: 100%;
     }
-}
-.logined-p{
-    color: rgb(185, 185, 185);
-    padding: 10px 0;
-    transition: .2s;
-    &:hover{
-        color:#fff
+    &-p{
+        color: rgb(185, 185, 185);
+        padding: 10px 0;
+        transition: .2s;
+        &:hover{
+            color:#fff
+        }
     }
 }
-.reg-submit {
-    padding: 8px 40px;
-    border-radius: 15px;
-    transition: .3s;
-    margin: 5px 0 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(56, 73, 124);
-    font-size: 12px;
-    letter-spacing: 1px;
-    &:hover{
-        box-shadow: 0px 0px 20px rgb(136, 135, 135);
-        cursor: pointer;
-    }
+.back{
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
