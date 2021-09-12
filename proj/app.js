@@ -91,7 +91,6 @@ themeNight.onclick = () => {
 function list(names) {
   var xs = names.map(p => p.name)
   var x = xs.pop()
-  console.log(x);
 }list([{name: 'Bart'},{name: 'Lisa'}])
 
 console.log("sdsfsd".repeat(0));

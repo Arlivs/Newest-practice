@@ -1,10 +1,9 @@
-const requestUrl = "https://jsonplaceholder.typicode.com/users";
-function sendRequest(url, method, body = null) {
-    return fetch(url)
-    .then(resp => {
-        if (resp.ok) return resp.json();
-    })
-}
-// sendRequest(requestUrl)
-//     .then(data => console.log(data))
-//     .catch(err => console.error(err))
+const express = require("express");
+const router = require("./routes");
+
+const PORT = 5555;
+
+const app = express()
+
+app.use(router)
+app.listen(PORT, ()=>console.log("Server work"))
